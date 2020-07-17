@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+div {
+    border: 1px solid silver;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 150px;
+    width: 30%;
+}
+#main {
+    width: 60%;
+    border: 0;
+}
+.half {
+    width: 49%;
+}
+ul {
+    padding-left: 20px;
+}
+li {
+    text-align: left;
+}

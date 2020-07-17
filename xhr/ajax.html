@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script lang="javascript">
+        let reqline = {
+            id: 1, quantity: 1, requestId: 1, productId: 1
+        };
+        var data = JSON.stringify(reqline);
+        let xhr = new XMLHttpRequest();
+        xhr.responseType = "json";
+        xhr.open("PUT", "http://localhost:5000/api/requestlines/1", true);
+        xhr.setRequestHeader('Content-type', 'application/json');
+        xhr.onload = function() {
+            console.log(xhr.response);
+        }
+        xhr.send(data);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

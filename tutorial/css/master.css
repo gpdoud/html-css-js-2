@@ -1,0 +1,12 @@
+body { 
+    font:normal normal normal 16pt/17.6pt Arial, sans-serif; 
+}
+#span4 {
+    font-family: Times New Roman;
+}
+.blue {
+    color: blue;
+}
+.bold {
+    font-weight: bold;
+}

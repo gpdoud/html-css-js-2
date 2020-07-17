@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="inc()">Increment</button>
+    <input id="inp" type="text">
+    <button onclick="dec()">Decrement</button>
+
+    <script lang="javascript">
+        var inpCtrl = document.getElementById("inp");
+        let counter = 0;
+        function inc() {
+            counter++;
+            display();
+        }
+        function dec() {
+            counter--;
+            display();
+        }
+        function display() {
+            console.log(`The value of the counter is ${counter}.`);   
+            inpCtrl.value = counter; 
+            inp.style.color = (counter % 2 == 0) ? "red" : "black";
+            inp.style.fontWeight = (counter % 3 == 0) ? "bold" : "normal";
+            inp.style.fontStyle = (counter % 7 == 0) ? "italic" : "normal";
+        }
+    </script>
+</body>
+</html>

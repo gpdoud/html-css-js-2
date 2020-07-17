@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let red = "red";
+        let green = "green";
+        let loaded = function() {
+            inp.value = "ABC";
+            inp.style.color = red;
+        }
+        let changeColor = function() {
+            inp.style.color = (inp.style.color == red) ? green : red;
+        }
+    </script>
+</head>
+<body onload="loaded()">
+    <input id="inp" type="text" placeholder="Enter some text">
+    <button onclick="changeColor()">Change color</button>
+</body>
+</html>

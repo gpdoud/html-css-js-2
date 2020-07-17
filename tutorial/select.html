@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="sel">
+        <option value="R">Red</option>
+        <option value="G" selected>Green</option>
+        <option value="B">Blue</option>
+        <option>Black</option>
+    </select>
+    <button onclick="clicked()">Click me!</button>
+    <script lang="javascript">
+        function clicked() {
+            let color = sel.options[sel.selectedIndex].text;
+            let colorValue = sel.options[sel.selectedIndex].value;
+            console.log("Color is", color, " and value is", colorValue);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            h2 {
+                color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color:red;">My First <span style="color:blue;">HTML</span> Page</h1>
+        <h2>This is the subtitle.</h2>
+        <p style="font-family:arial;">This is the <span style="font-weight:bold;">first line</span></p> 
+        <span id="s1">This is the                                 
+                               first sentence.</span> 
+        <!-- <br>       -->
+        <span>This is the second sen-tence.</span>  
+        <script lang="javascript">
+            let show = false;
+            let ctrl = document.getElementById("s1");
+            function clicked() {
+                ctrl.style.display = (show) ? "inline" : "none";
+                show = !show;
+            }
+        </script>
+        <button id="btn" onclick="clicked()">Click me!</button>     
+    </body>
+</html>
