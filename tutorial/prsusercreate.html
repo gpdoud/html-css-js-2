@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="css/prsusercreate.css" rel="stylesheet">
+    <script src="js/prsusercreate.js"></script>
+</head>
+
+<body>
+    <h3>User Create</h3>
+    <table class="table table-sm">
+        <tr>
+            <th>Id</th>
+            <td><input id="pid" type="number" value="0" disabled></td>
+        </tr>
+        <tr>
+            <th>Username</th>
+            <td><input id="pusername" type="text" size="30"></td>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <td><input id="ppassword" type="password" size="30"></td>
+        </tr>
+        <tr>
+            <th>Firstname</th>
+            <td><input id="pfirstname" type="text" size="30"></td>
+        </tr>
+        <tr>
+            <th>Lastname</th>
+            <td><input id="plastname" type="text" size="30"></td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td><input id="pphone" type="text" size="12"></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input id="pemail" type="text" size="80"></td>
+        </tr>
+        <tr>
+            <th>Reviewer</th>
+            <td><input id="previewer" type="checkbox"></td>
+        </tr>
+        <tr>
+            <th>Admin</th>
+            <td><input id="padmin" type="checkbox"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="save()" class="btn btn-primary">Save</button>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
