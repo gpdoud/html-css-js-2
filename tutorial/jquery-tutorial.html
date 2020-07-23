@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $().ready(() => {
+
+            $("#btn").click( () => {
+                $("#lbl").text(
+                    $("#inp").val()
+                );
+            } );
+        
+        });
+    </script>
+</head>
+<body>
+    <input id="inp" type="text">
+    <button id="btn">Click me!</button>
+    <label id="lbl"></label>
+</body>
+</html>
